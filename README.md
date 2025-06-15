@@ -1,54 +1,74 @@
-# React + TypeScript + Vite
+# 🌤️ Simple Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and minimal weather application built with **React + TypeScript**. It allows users to check current weather data by searching for a city or using their geolocation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Features
 
-## Expanding the ESLint configuration
+- 🌍 Search weather by city name  
+- 📍 Detect and fetch weather using your current location  
+- ⚠️ Basic validation and error handling for invalid input  
+- 🎯 Simple, responsive UI with clean SCSS styling  
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧰 Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React** with functional components and hooks  
+- **TypeScript** for type safety  
+- **SCSS** for styling  
+- **WeatherAPI.com** 
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kamil3397/react-weather-app.git
+cd react-weather-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Add Your API Key
+
+- Your API key and base URL should be configured in a `.env` file and imported via `config.ts`.
+- If not already set, create a `.env` file in the project root:
+
+```env
+VITE_API_KEY=your_api_key_here
+VITE_BASE_URL=https://api.weatherapi.com/v1/
+```
+### 4. Start the App
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🧪 How It Works
+
+- The app uses React Context to share weather state and API methods.
+- `SearchForm` allows users to enter a city name with basic validation.
+- `MyLocationButton` uses the browser's geolocation API.
+- `WeatherDisplay` shows weather info or error messages based on state.
+
+## 👨‍💻 Author
+
+**Kamil Kamiński**  
+[GitHub Profile](https://github.com/kamil3397)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
