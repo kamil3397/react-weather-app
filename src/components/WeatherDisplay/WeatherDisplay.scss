@@ -1,0 +1,76 @@
+.weather-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: #0a1f44;
+  max-width: 320px;
+  margin: 1.5rem auto 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .temperature {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.2rem;
+
+    span {
+      font-size: 1.2rem;
+      align-self: flex-start;
+    }
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #0a1f44;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+
+    div {
+      text-align: center;
+
+      .value {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #0a1f44;
+      }
+
+      .label {
+        font-size: 0.85rem;
+        color: #666;
+      }
+    }
+  }
+}
+
+.display-error,
+.loading {
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  font-size: 1rem;
+}

@@ -1,0 +1,15 @@
+.my-location-btn {
+  background-color: #dff4ff;
+  color: #0a1f44;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #bfe3f7;
+  }
+}
