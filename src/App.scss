@@ -30,3 +30,19 @@ h1 {
   color: #ffffff;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 375px) {
+  body {
+    padding-top: 2rem;
+  }
+
+  .app-container {
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}

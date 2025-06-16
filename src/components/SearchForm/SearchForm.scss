@@ -46,3 +46,22 @@
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
+
+@media (max-width: 375px) {
+  .search-form {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+
+    input {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      border-radius: 2rem;
+      text-align: center;
+    }
+
+    button {
+      border-radius: 1rem;
+      width: 100%;
+    }
+  }
+  }

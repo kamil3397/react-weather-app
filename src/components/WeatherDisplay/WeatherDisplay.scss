@@ -74,3 +74,61 @@
   margin-top: 2rem;
   font-size: 1rem;
 }
+
+@media (max-width: 375px) {
+  .weather-card {
+    padding: 1rem;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .temperature {
+      font-size: 2.8rem;
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .icon {
+      width: 64px;
+      height: 64px;
+    }
+
+    .details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+    div {
+      text-align: center;
+
+      .value {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #0a1f44;
+      }
+
+      .label {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 0.25rem;
+      }
+    }
+  }
+  }
+
+  .display-error,
+  .loading {
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+  }
+}

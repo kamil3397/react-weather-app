@@ -13,3 +13,11 @@
     background-color: #bfe3f7;
   }
 }
+@media (max-width: 375px) {
+  .my-location-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+}
+
