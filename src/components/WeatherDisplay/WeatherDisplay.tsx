@@ -5,8 +5,8 @@ import './WeatherDisplay.scss'
 export const WeatherDisplay: FC = () => {
   const { weather, error } = useWeatherContext()
 
-  if (error) return <p className="display-error">Błąd: {error}</p>
-  if (!weather) return <p className="loading">Pobieranie danych…</p>
+  if (error) return <p className="display-error">Error: {error}</p>
+  if (!weather) return <p className="loading">Fetching data...</p>
 
   const {
     location: { name, country },
@@ -30,7 +30,7 @@ export const WeatherDisplay: FC = () => {
       <p className="description">{text}</p>
 
       <img
-        src={icon.startsWith('//') ? `https:${icon}` : icon}
+        src= {`https:${icon}`}
         alt={text}
         className="icon"
       />
