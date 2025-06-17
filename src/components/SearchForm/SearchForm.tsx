@@ -2,7 +2,7 @@ import { useState, type FormEvent, type FC } from 'react'
 import { useWeatherContext } from '../../context/WeatherContext'
 import './SearchForm.scss'
 
-export const SearchForm: FC = () => {
+  const SearchForm: FC = () => {
   const [city, setCity] = useState('')
   const [error, setError] = useState('')
   const { fetchWeather } = useWeatherContext()
@@ -38,3 +38,4 @@ export const SearchForm: FC = () => {
     </>
   )
 }
+export default SearchForm

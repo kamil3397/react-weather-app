@@ -2,7 +2,7 @@ import { type FC } from 'react'
 import './MyLocationButton.scss'
 import { useWeatherContext } from '../../context/WeatherContext'
 
-export const MyLocationButton: FC = () => {
+const MyLocationButton: FC = () => {
   const { fetchWeatherByGeolocation } = useWeatherContext()
 
   return (
@@ -11,3 +11,4 @@ export const MyLocationButton: FC = () => {
     </button>
   )
 }
+export default MyLocationButton

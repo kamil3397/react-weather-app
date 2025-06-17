@@ -1,18 +1,22 @@
-import { WeatherProvider } from './context/WeatherContext'
-import { SearchForm } from './components/SearchForm/SearchForm'
-import { WeatherDisplay } from './components/WeatherDisplay/WeatherDisplay'
+import { Suspense, lazy } from 'react'
 import './App.scss'
-import { MyLocationButton } from './components/MyLocationButton/MyLocationButton'
+
+const SearchForm = lazy(() => import('./components/SearchForm/SearchForm'))
+const WeatherDisplay = lazy(() => import('./components/WeatherDisplay/WeatherDisplay'))
+const MyLocationButton = lazy(() => import('./components/MyLocationButton/MyLocationButton'))
 
 const App = () => (
-  <WeatherProvider>
     <div className="app-container">
       <h1>Simple Weather App</h1>
-      <SearchForm />
-      <MyLocationButton />
-      <WeatherDisplay />
+
+      <Suspense fallback={<p className='loading'>Loading weather…</p>}>
+
+        <SearchForm />
+        <MyLocationButton />
+        <WeatherDisplay />
+
+      </Suspense>
     </div>
-  </WeatherProvider>
 )
 
 export default App

@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { SearchForm } from './SearchForm'
+import SearchForm from './SearchForm'
 
 const fetchWeatherMock = vi.fn()
 vi.mock('../../context/WeatherContext', () => ({

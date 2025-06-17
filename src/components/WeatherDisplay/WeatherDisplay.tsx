@@ -2,7 +2,7 @@ import type { FC } from 'react'
 import { useWeatherContext } from '../../context/WeatherContext'
 import './WeatherDisplay.scss'
 
-export const WeatherDisplay: FC = () => {
+ const WeatherDisplay: FC = () => {
   const { weather, error } = useWeatherContext()
 
   if (error) return <p className="display-error">Error: {error}</p>
@@ -48,3 +48,4 @@ export const WeatherDisplay: FC = () => {
     </div>
   )
 }
+export default WeatherDisplay

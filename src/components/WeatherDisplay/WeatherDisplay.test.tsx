@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { WeatherDisplay } from './WeatherDisplay'
+import WeatherDisplay from './WeatherDisplay'
 
 const mockWeather = {
   location: { name: 'Barcelona', country: 'Spain' },
