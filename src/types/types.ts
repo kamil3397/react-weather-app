@@ -1,35 +1,37 @@
 export interface LocationData {
-  name: string
-  country: string
+  name: string;
+  country: string;
 }
 
 export interface CurrentData {
-  temp_c: number
+  temp_c: number;
   condition: {
-    text: string
-    icon: string
-  }
-   humidity: number
-    wind_kph: number
+    text: string;
+    icon: string;
+  };
+  humidity: number;
+  wind_kph: number;
 }
 
 export interface WeatherResponse {
-  location: LocationData
-  current: CurrentData
+  location: LocationData;
+  current: CurrentData;
 }
 
 export interface WeatherData {
   location: {
-    name: string
-    country: string
-  }
+    // czemu nie uzyles tu LocationData? to jakis inny typ?
+    name: string;
+    country: string;
+  };
   current: {
-    temp_c: number
+    // czemu nie uzyles tu CurrentData? to jakis inny typ?
+    temp_c: number;
     condition: {
-      text: string
-      icon: string
-    }
-    humidity: number
-    wind_kph: number
-  }
+      text: string;
+      icon: string;
+    };
+    humidity: number;
+    wind_kph: number;
+  };
 }

@@ -6,18 +6,19 @@ A clean and minimal weather application built with **React + TypeScript**. It al
 
 ## 🔍 Features
 
-- 🌍 Search weather by city name  
-- 📍 Detect and fetch weather using your current location  
-- ⚠️ Basic validation and error handling for invalid input  
-- 🎯 Simple, responsive UI with clean SCSS styling  
+- 🌍 Search weather by city name
+- 📍 Detect and fetch weather using your current location
+- ⚠️ Basic validation and error handling for invalid input
+- 🎯 Simple, responsive UI with clean SCSS styling
+
 ---
 
 ## 🧰 Tech Stack
 
-- **React** with functional components and hooks  
-- **TypeScript** for type safety  
-- **SCSS** for styling  
-- **WeatherAPI.com** 
+- **React** with functional components and hooks #dziwne jakby bylo inaczej
+- **TypeScript** for type safety #kazdy wie po co jest typescript
+- **SCSS** for styling
+- **WeatherAPI.com**
 
 ---
 
@@ -45,6 +46,7 @@ npm install
 VITE_API_KEY=your_api_key_here
 VITE_BASE_URL=https://api.weatherapi.com/v1/
 ```
+
 ### 4. Start the App
 
 ```bash
@@ -71,4 +73,4 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License**. #co to MIT license?
